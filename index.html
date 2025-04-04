@@ -4,40 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="styles.css">
+    <link rel="stylesheet" href="styles.css">
     <script src="script.js"></script>
 </head>
 <body>
     <!-- mouse events -->
-    <button id="mouse-events">hover me!</button>
+     <div id="mouse" class="container">
+        <button id="mouse-events">hover me!</button>
+    </div>
 
     <!-- keyboards events -->
-    <label for="keyboard-events">Type something here:</label>
-    <input id="keyboard-events">
-    <div id="lastkey" class="message">the last key you entered was: </div>
+     <div id="keyboards" class="container"> 
+        <label for="keyboard-events">Type something here:</label>
+        <input id="keyboard-events">
+        <div id="lastkey" class="message">the last key you entered was: </div>
+    </div>
 
     <!-- form events -->
-    <form id="live-feedback">
-        <label for="feedback-title">Title:</label>
-        <input id="feedback-title">
-        <label for="feedback">Feedback:</label>
-        <textarea id="feedback"></textarea>
-        <button type="submit" id="submitForm">Submit</button>
-    </form>
+        <form id="live-feedback" class="container">
+            <label for="feedback-title">Title:</label>
+            <input id="feedback-title">
+            <label for="feedback">Feedback:</label>
+            <textarea id="feedback"></textarea>
+            <button type="submit" id="submitForm">Submit</button>
+        </form>
 
     <!-- focus & blur events -->
-    <label for="name">What's your Name?</label>
-    <input id="name">
-    <div id="response" class="message"></div>
+     <div id="fb" class="container">
+        <label for="name">What's your Name?</label>
+        <input id="name">
+        <div id="response" class="message"></div>
+    </div>
 
     <!-- event delegation -->
-     <div id="animalSelector">
-        <button class="btn" data-emoji="🐰">🐰</button>
-        <button class="btn" data-emoji="🦊">🦊</button>
-        <button class="btn" data-emoji="🐻">🐻</button>
-        <button class="btn" data-emoji="🐱">🐱</button>
-        <button class="btn" data-emoji="🐧">🐧</button>
-     </div>
-     <div id="animalselected" class="message"></div>
+     <div id="animalSelector" class="container">
+        <h3>which one is your favourite animal?</h3>
+        <div id="box">
+            <button class="btn" data-emoji="🐰">🐰</button>
+            <button class="btn" data-emoji="🦊">🦊</button>
+            <button class="btn" data-emoji="🐻">🐻</button>
+            <button class="btn" data-emoji="🐱">🐱</button>
+            <button class="btn" data-emoji="🐧">🐧</button>
+        </div>
+        <div id="animalselected" class="message"></div>
+    </div>
+     
 </body>
 </html>
