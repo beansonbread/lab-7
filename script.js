@@ -50,4 +50,15 @@ name.addEventListener('blur', function() {
     }
 })
 
+//animal selector 
+const container = document.getElementById('animalSelector');
+const selected = document.getElementById('animalselected');
+
+container.addEventListener('click', function (event) {
+    if (event.target.classList.contains('btn')) {
+        const animal = event.target.getAttribute('data-emoji');
+        selected.textContent = `ooh! you like ${animal}s? me too!`;
+    }
+})
+
 });
