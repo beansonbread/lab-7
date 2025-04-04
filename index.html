@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <!-- mouse events -->
+    <button id="mouse-events">hover me!</button>
+
+    <!-- keyboards events -->
+    <label for="keyboard-events">Type something here:</label>
+    <input id="keyboard-events">
+    <p>Last key pressed: ${key}</p>
+
+    <!-- form events -->
+    <form id="live-feedback">
+        <label for="feedback-title">Title:</label>
+        <input id="feedback-title">
+        <label for="feedback">Feedback:</label>
+        <textarea id="feedback"></textarea>
+        <button type="submit">Submit</button>
+    </form>
+
+    <!-- focus & blur events -->
+    <label for="name">What's your Name?</label>
+    <input id="name">
+    <div id="response" class="message"></div>
+
+    <!-- event delegation -->
+     <div id="animalSelector">
+        <button class="btn" data-emoji="🐰">🐰</button>
+        <button class="btn" data-emoji="🦊">🦊</button>
+        <button class="btn" data-emoji="🐻">🐻</button>
+        <button class="btn" data-emoji="🐱">🐱</button>
+        <button class="btn" data-emoji="🐧">🐧</button>
+     </div>
+     <div id="animalselected" class="message"></div>
+</body>
+</html>
