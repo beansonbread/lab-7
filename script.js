@@ -29,4 +29,25 @@ submitEvent.addEventListener('submit', function(event) {
     alert("thanks!");
 });
 
+//focus & blur events
+const name = document.getElementById('name');
+const response = document.getElementById('response');
+
+name.addEventListener('focus', function() {
+    response.textContent = "what's your name?";
+    response.style.color = "blue";
+});
+
+name.addEventListener('blur', function() {
+    const input = name.value;
+    if (input) {
+        response.textContent = `hi ${input}`;
+        response.style.color = "green";
+    }
+    else {
+        response.textContent = "you didn't enter your name";
+        response.style.color = "red";
+    }
+})
+
 });
